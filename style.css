@@ -27,3 +27,42 @@ h1{
   margin: 10px;
   padding: 5px;
 }
+
+#m1{
+  border: solid 3px black;
+}
+
+article[id="m2"] { /* ==> #m2와 동일 */
+  color: blue
+} 
+
+article div::before {  /* article 안에 있는 div만 적용해줘. */
+  content: '[영화소개] ';
+  font-weight: 900;
+  color: darkgreen;
+}
+
+div::after {
+  content: ' (더보기)';
+  font-style: italic;
+  color: gray;
+}
+
+a {
+  text-decoration: none;
+  color: darkred;
+}
+
+a:visited {
+  color: orange;
+}
+
+a:hover {  /* hover => hand over의 줄임말 */
+  background-color: blue;
+  color: white;
+}
+
+a:active {
+  background-color: darkred;
+  color: white;
+}
